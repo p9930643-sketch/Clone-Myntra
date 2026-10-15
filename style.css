@@ -2,8 +2,31 @@ html , body {
     height:100%;
     width:100%;
 }
+
+header{
+    position : sticky;
+    top: 0;
+    background: white;
+}
+
+
 .left img{
-    width: 40px;
-    height: 40px;
-    object-fit: contain;
+    width: 32px;
+    height: 23px;
+
+}
+
+.container{
+    padding: 0 10vw;
+    margin: auto;
+}
+
+nav ul li{
+    list-style: none;
+    padding: 0 12px;
+}
+
+.section1{
+    background: #f2f2f2;
+    height: 122vh;
 }
