@@ -30,15 +30,28 @@ nav{
     font-size: 12px;
     padding-top: 14px;
 }
-
-nav ul li{
-    list-style: none;
-    padding: 0 12px;
+.nav-links{
+    display: flex;
+    align-items: stretch;
+    align-self: stretch;
+    gap: 4px;
 }
 
-.right flex{
-    display: flex;
-    gap: 12px;
+.nav-item {
+    position: relative;
+    padding: 0 12px;
+    border: 0;
+    background: white;
+    color: #282c3f;
+    font-size: 14px;
+    font-weight: 700;
+    cursor: pointer;
+    white-space: nowrap;
+    border-bottom: 3px solid transparent;
+}
+.nav-item:hover,
+.nav-item.active{
+    border-bottom-color: #ff3f6c;
 }
 
 .section1 {
