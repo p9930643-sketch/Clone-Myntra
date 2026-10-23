@@ -29,19 +29,23 @@
             <button class="nav-item" data-menu="Studio">STUDIO</button>
         </nav> 
 
-            <div class="right flex items-center">
-                <input class ="search" placeholder="Search for products, brands and more" class="desktop-searchBar" value="" data-reactid="1039">
-                <div class="profile mx-2">Profile</div>
-                <div class="wishlist mx-2">Wishlist</div>
-                <div class="bag mx-2">Bag</div>
-                </div>
+            <div class="search-box">
+                <span>⌕</span>
+                <input type="search" placeholder="Search for products, brands and more" aria-label="Search products">
+            </div>
+
+            <div class="user-action">
+                <button type="button" aria-label="Profile"><small>Profile</small></button>
+                <button type="button" aria-label="Wishlist"><small>Wishlist</small></button>
+                <button type="button" aria-label="Shopping Bag"><small>Shopping Bag</small></button>
+            </div>
         </nav>
     </header>
 <!--Mega droupdown -->
-    <div class="mega-overlay" id="megaOverlay">
+    <div class="mega-over" id="megaOver">
         <div class="mega-menu" id="megaMenu">
             <!--Men-->
-            <div class="menu-panel" data-menu="Men">
+            <div class="menu-panel" data-panel="Men">
                 <div class="menu-column">
                     <h3>Topwear</h3>
                     <a href="#">T-Shirts</a>
@@ -60,6 +64,7 @@
                     <a href="#">Nehru Jackets</a>
                     <a href="#">Dhotis</a>
                 </div>
+
                 <div class="menu-column shaded">
                     <h3>Bottomwear</h3>
                     <a href="#">Jeans</a>
@@ -77,6 +82,7 @@
                     <hr>
                     <h3>Plus Size</h3>
                 </div>
+
                 <div class="menu-column">
                     <h3>Footwear</h3>
                     <a href="#">Casual Shoes</a>
@@ -93,6 +99,7 @@
                     <br>
                     <h3>Watches</h3>
                 </div>
+
                 <div class="menu-column shaded">
                     <h3>Sports &amp; Active Wear</h3>
                      <a href="#">Sports Shoes</a>
@@ -110,6 +117,7 @@
                      <a href="#">Headphones</a>
                      <a href="#">Speakers</a>
                 </div>
+
                 <div class="menu-column">
                     <h3>Fashion Accessories</h3>
                     <a href="#">Wallets</a>
@@ -129,8 +137,428 @@
                 </div>
             </div>
             <!--WOMEN-->
+            <div class="menu-panel" data-panel="Women">
+                <div class="menu-column">
+                    <h3>Indian Wear &amp; Fusion Wear</h3>
+                    <a href="#">Kurtas &amp; Suits</a>
+                    <a href="#">Kurtis, Tunics &amp; Tops</a>
+                    <a href="#">Sarees</a>
+                    <a href="#">Ethnic Dresses</a>
+                    <a href="#">Leggings, Salwars &amp; Churidars</a>
+                    <a href="#">Skirts &amp; Palazzos</a>
+                    <a href="#">Dupattas &amp; Shawls</a>
+                    <a href="#">Lehenga Cholis</a>
+                    <a href="#">Blouses</a>
+                    <a href="#">Dress Materials</a>
+                    <hr>
+                    <h3>Belts, Scarves &amp; More</h3>
+                </div>
+
+                <div class="menu-column shaded">
+                    <h3>Western Wear</h3>
+                    <a href="#">Dresses</a>
+                    <a href="#">Tops</a>
+                    <a href="#">T-Shirts</a>
+                    <a href="#">Jeans</a>
+                    <a href="#">Trousers &amp; Capris</a>
+                    <a href="#">Shorts &amp; Skirts</a>
+                    <a href="#">Co-ord Sets</a>
+                    <a href="#">Jumpsuits &amp; Playsuits</a>
+                    <a href="#">Shrugs</a>
+                    <a href="#">Sweaters &amp; Sweatshirts</a>
+                    <a href="#">Jackets &amp; Coats</a>
+                    <hr>
+                    <h3>Plus Size</h3>
+                </div>
+
+                <div class="menu-column">
+                    <h3>Footwear</h3>
+                    <a href="#">Flats</a>
+                    <a href="#">Casual Shoes</a>
+                    <a href="#">Heels</a>
+                    <a href="#">Boots</a>
+                    <a href="#">Sports Shoes &amp; Floaters</a>
+                    <hr>
+                    <h3>Sports &amp; Active Wear</h3>
+                    <a href="#">Clothing</a>
+                    <a href="#">Footwear</a>
+                    <hr>
+                    <h3>Sleepwear</h3>
+                    <a href="#">Night Suits</a>
+                    <a href="#">Nightdresses</a>
+                </div>
+
+                    <div class="menu-column shaded">
+                        <h3>Beauty &amp; Personal Care</h3>
+                        <a href="#">Makeup</a>
+                        <a href="#">Skincare</a>
+                        <a href="#">Premium Beauty</a>
+                        <a href="#">Lipsticks</a>
+                        <a href="#">Fragrances</a>
+                        <a href="#">Haircare</a>
+                        <a href="#">Bath &amp; Body</a>
+                        <hr>
+                        <h3>Jewellery</h3>
+                        <a href="#">Fashion Jewellery</a>
+                        <a href="#">Fine Jewellery</a>
+                        <a href="#">Earrings</a>
+                        <a href="#">Necklaces</a>
+                    </div>
+
+                    <div class="menu-column">
+                        <h3>Accessories</h3>
+                        <a href="#">Handbags</a>
+                        <a href="#">Clutches</a>
+                        <a href="#">Wallets</a>
+                        <a href="#">Backpacks</a>
+                        <a href="#">Sunglasses</a>
+                        <a href="#">Watches</a>
+                        <a href="#">Belts</a>
+                        <a href="#">Hats &amp; Caps</a>
+                        <hr>
+                        <h3>Trending</h3>
+                        <a href="#">Party Wear</a>
+                        <a href="#">Workwear</a>
+                        <a href="#">Wedding Collection</a>
+                    </div>
+                </div>
+                <!--KIDS-->
+                <div class="menu-panel" data-panel="Kids">
+                    <div class="menu-column">
+                        <h3>Boys Clothing</h3>
+                        <a href="#">T-Shirts</a>
+                        <a href="#">Shirts</a>
+                        <a href="#">Shorts</a>
+                        <a href="#">Jeans</a>
+                        <a href="#">Trousers</a>
+                        <a href="#">Ethnic Wear</a>
+                        <a href="#">Jackets</a>
+                        <a href="#">Innerwear</a>
+                        <hr>
+                        <h3>Boys Footwear</h3>
+                        <a href="#">Casual Shoes</a>
+                        <a href="#">Sports Shoes</a>
+                        <a href="#">Sandals</a>
+                    </div>
+                    
+                    <div class="menu-column shaded">
+                        <h3>Girls Clothing</h3>
+                        <a href="#">Dresses</a>
+                        <a href="#">Tops</a>
+                        <a href="#">T-Shirts</a>
+                        <a href="#">Jeans</a>
+                        <a href="#">Skirts</a>
+                        <a href="#">Leggings</a>
+                        <a href="#">Ethnic Wear</a>
+                        <a href="#">Party Wear</a>
+                        <hr>
+                        <h3>Girls Footwear</h3>
+                        <a href="#">Flats</a>
+                        <a href="#">Casual Shoes</a>
+                        <a href="#">Sports Shoes</a>
+                    </div>
+
+                    <div class="menu-column">
+                        <h3>Infants</h3>
+                        <a href="#">Bodysuits</a>
+                        <a href="#">Rompers</a>
+                        <a href="#">Clothing Sets</a>
+                        <a href="#">Dresses</a>
+                        <a href="#">Winter Wear</a>
+                        <a href="#">Infact Care</a>
+                        <hr>
+                        <h3>Kids Accessories</h3>
+                        <a href="#">Bags &amp; Backpacks</a>
+                        <a href="#">Watches</a>
+                        <a href="#">Sunglasses</a>
+                        <a href="#">Hair Accessories</a>
+                    </div>
+
+                    <div class="menu-column shaded">
+                        <h3>Toys &amp; Learning</h3>
+                        <a href="#">Learning Toys</a>
+                        <a href="#">Action Figures</a>
+                        <a href="#">Soft Toys</a>
+                        <a href="#">Puzzles</a>
+                        <a href="#">Board Games</a>
+                        <a href="#">Outdooe Toys</a>
+                        <hr>
+                        <h3>Kids Room</h3>
+                        <a href="#">Decor</a>
+                        <a href="#">Bedding</a>
+                </div>
+
+                <div class="menu-column">
+                    <h3>Brands</h3>
+                    <a href="#">H&amp;M Kids</a>
+                    <a href="#">U.S. Polo Assn. Kids</a>
+                    <a href="#">Mothercare</a>
+                    <a href="#">Puma Kids</a>
+                    <a href="#">Nike Kids</a>
+                    <a href="#">Babyhug</a>
+                    <hr>
+                    <h3>Shop by Age</h3>
+                    <a href="#">0-2 Years</a>
+                    <a href="#">2-5 Years</a>
+                    <a href="#">6-12 Years</a>
+                </div>
+            </div>
+            <!--Home Decor-->
+            <div class="menu-panel" data-panel="Home">
+                <div class="menu-column">
+                    <h3>Bed Linen &amp; Furnishing</h3>
+                    <a href="#">Bedsheets</a>
+                    <a href="#">Bedding Sets</a>
+                    <a href="#">Blankets &amp; Comforters</a>
+                    <a href="#">Pillows &amp; Pillow Covers</a>
+                    <a href="#">Bed Covers</a>
+                    <a href="#">Curtains</a>
+                    <a href="#">Sofa Covers</a>
+                    <a href="#">Bed Runners</a>
+                    <a href="#">Diwan Sets</a>
+                    <hr>
+                    <h3>Flooring</h3>
+                    <a href="#">Carpets</a>
+                    <a href="#">Floor Mats</a>
+                </div>
+
+                <div class="menu-column shaded">
+                    <h3>Bath</h3>
+                    <a href="#">Bath Towels</a>
+                    <a href="#">Hand Towels</a>
+                    <a href="#">Bath Mats</a>
+                    <a href="#">Bath Accessories</a>
+                    <hr>
+                    <h3>Home Decor</h3>
+                    <a href="#">Plants &amp; Planters</a>
+                    <a href="#">Wall Decor</a>
+                    <a href="#">Mirrors</a>
+                    <a href="#">Clocks</a>
+                    <a href="#">Showpieces</a>
+                    <a href="#">Photo Frames</a>
+                </div>
+
+                <div class="menu-column">
+                    <h3>Lighting</h3>
+                    <a href="#">Floor Lamps</a>
+                    <a href="#">Table Lamps</a>
+                    <a href="#">Wall Lamps</a>
+                    <a href="#">String Lights</a>
+                    <hr>
+                    <h3>Home Fragrances</h3>
+                    <a href="#">Candles</a>
+                    <a href="#">Diffusers</a>
+                    <a href="#">Room Fresheners</a>
+                </div>
+
+                <div class="menu-column shaded">
+                    <h3>Kitchen &amp; Dining</h3>
+                    <a href="#">Dinnerware</a>
+                    <a href="#">Cups &amp; Mugs</a>
+                    <a href="#">Cookware</a>
+                    <a href="#">Storage Containers</a>
+                    <a href="#">Kitchen Tools</a>
+                    <a href="#">Table Linen</a>
+                    <hr>
+                    <h3>Storage</h3>
+                    <a href="#">Organisers</a>
+                    <a href="#">Laundry Bags</a>
+                </div>
+
+                <div class="menu-column">
+                    <h3>Furniture</h3>
+                    <a href="#">Cushions</a>
+                    <a href="#">Pouffes</a>
+                    <a href="#">Small Furniture</a>
+                    <a href="#">Shelves</a>
+                    <hr>
+                    <h3>Top Brands</h3>
+                    <a href="#">Home Centre</a>
+                    <a href="#">Spaces</a>
+                    <a href="#">D'Decor</a>
+                    <a href="#">Story@Home</a>
+                </div>
+            </div>
+            <!--BEAUTY-->
+            <div class="menu-panel" data-panel="Beauty">
+                <div class="menu-column">
+                    <h3>Makeup</h3>
+                    <a href="#">Lipstick</a>
+                    <a href="#">Lip Gloss</a>
+                    <a href="#">Mascara</a>
+                    <a href="#">Eyeliner</a>
+                    <a href="#">Foundation</a>
+                    <a href="#">Concealer</a>
+                    <a href="#">Compact</a>
+                    <a href="#">Nail Polish</a>
+                    <hr>
+                    <h3>Makeup Tools</h3>
+                    <a href="#">Brushes</a>
+                    <a href="#">Sponges</a>
+                </div>
+
+                <div class="menu-column shaded">
+                    <h3>Skincare</h3>
+                    <a href="#">Face Wash</a>
+                    <a href="#">Moisturisers</a>
+                    <a href="#">Sunscreens</a>
+                    <a href="#">Serums</a>
+                    <a href="#">Face Masks</a>
+                    <a href="#">Eye Cream</a>
+                    <hr>
+                    <h3>Bath &amp; Body</h3>
+                    <a href="#">Body Lotion</a>
+                    <a href="#">Body Wash</a>
+                    <a href="#">Hand Cream</a>
+                </div>
+
+                <div class="menu-column">
+                    <h3>Haircare</h3>
+                    <a href="#">Shampoo</a>
+                    <a href="#">Conditioner</a>
+                    <a href="#">Hair Oil</a>
+                    <a href="#">Hair Masks</a>
+                    <a href="#">Styling Products</a>
+                    <hr>
+                    <h3>Tools &amp; Appliances</h3>
+                    <a href="#">Hair Dryers</a>
+                    <a href="#">Straighteners</a>
+                    <a href="#">Curlers</a>
+                </div>
+
+                <div class="menu-column shaded">
+                    <h3>Fragrances</h3>
+                    <a href="#">Perfumes</a>
+                    <a href="#">Body Mists</a>
+                    <a href="#">Deodorants</a>
+                    <a href="#">Gift Sets</a>
+                    <hr>
+                    <h3>Men's Grooming</h3>
+                    <a href="#">Beard Care</a>
+                    <a href="#">Shaving</a>
+                    <a href="#">Trimmers</a>
+                </div>
+
+                <div class="menu-column">
+                    <h3>Luxury Beauty</h3>
+                    <a href="#">Premium Makeup</a>
+                    <a href="#">Premium Skincare</a>
+                    <a href="#">Luxury Fragrances</a>
+                    <a href="#">Beauty Gifts</a>
+                    <hr>
+                    <h3>Popular Brands</h3>
+                    <a href="#">Maybelline</a>
+                    <a href="#">Lakme</a>
+                    <a href="#">L'Oréal Paris</a>
+                    <a href="#">The Ordinary</a>
+                </div>
+            </div>
+
+            <!--GENZ-->
+            <div class="menu-panel" data-panel="Genz">
+                <div class="menu-column">
+                    <h3>Trending Now</h3>
+                    <a href="#">Oversized Tees</a>
+                    <a href="#">Baggy Jeans</a>
+                    <a href="#">Cargo Pants</a>
+                    <a href="#">Graphic Tees</a>
+                    <a href="#">Co-ord Sets</a>
+                    <hr>
+                    <h3>Fresh Fits</h3>
+                    <a href="#">College Wear</a>
+                    <a href="#">Everyday Basics</a>
+                </div>
+
+                <div class="menu-column shaded">
+                    <h3>Women</h3>
+                    <a href="#">Crop Tops</a>
+                    <a href="#">Mini Dresses</a>
+                    <a href="#">Wide Leg Jeans</a>
+                    <a href="#">Skorts</a>
+                    <a href="#">Statement Tops</a>
+                    <a href="#">Sneakers</a>
+                    <hr>
+                    <h3>Accessories</h3>
+                    <a href="#">Mini Bags</a>
+                    <a href="#">Sunglasses</a>
+                </div>
+
+                <div class="menu-column">
+                    <h3>Men</h3>
+                    <a href="#">Oversized Shirts</a>
+                    <a href="#">Relaxed Trousers</a>
+                    <a href="#">Printed Tees</a>
+                    <a href="#">Utility Jackets</a>
+                    <a href="#">Sneakers</a>
+                    <a href="#">Caps</a>
+                    <hr>
+                    <h3>Active Style</h3>
+                    <a href="#">Sportswear</a>
+                    <a href="#">Athleisure</a>
+                </div>
+
+                <div class="menu-column shaded">
+                    <h3>Fashion Finds</h3>
+                    <a href="#">Under ₹499</a>
+                    <a href="#">Under ₹999</a>
+                    <a href="#">New Arrivals</a>
+                    <a href="#">Best Sellers</a>
+                    <hr>
+                    <h3>Style Vibes</h3>
+                    <a href="#">Minimal</a>
+                    <a href="#">Y2K</a>
+                    <a href="#">Street Style</a>
+                    <a href="#">Vintage</a>
+                </div>
+
+                <div class="menu-column">
+                    <h3>Gen Z Picks</h3>
+                     <a href="#">Denim Edit</a>
+                     <a href="#">Party Looks</a>
+                     <a href="#">Campus Essentials</a>
+                     <a href="#">Vacation Wear</a>
+                     <hr>
+                     <h3>Explore</h3>
+                      <a href="#">What's New</a>
+                      <a href="#">Most Wanted</a>
+                </div>
+            </div>
+
+            <!--STUDIO-->
+            <div class="menu-panel studio-panel" data-panel="Studio">
+                <div class="studio-intro">
+                    <h2>Myntra <span>STUDIO</span></h2>
+                    <p>Your daily dose of fashion inspiration.</p>
+                    <p>Explore styling ideas, trends, creators and curated looks.</p>
+                </div>
+
+                <div class="menu-column">
+                    <h3>Discover</h3>
+                     <a href="#">Latest Trends</a>
+                     <a href="#">Style Guides</a>
+                     <a href="#">Celebrity Looks</a>
+                     <a href="#">Fashion Stories</a>
+                </div>
+
+                <div class="menu-column shaded">
+                    <h3>Get Inspired</h3>
+                    <a href="#">Outfit Ideas</a>
+                    <a href="#">Seasonal Trends</a>
+                    <a href="#">Occasion Wear</a>
+                    <a href="#">Street Style</a>
+                </div>
+
+                <div class="menu-column">
+                    <h3>Explore More</h3>
+                      <a href="#">Creator Picks</a>
+                      <a href="#">Beauty Tips</a>
+                      <a href="#">Trending Videos</a>
+                      <a href="#">Editor's Picks</a>
+            </div>
         </div>
     </div>
+    </div>
+
     <section class="container section1">
         <img class="couponImg" src="img 1.jpg" />
     </section>
@@ -140,12 +568,14 @@
     </section>
 
     <section class="container section1 flex flex-wrap">
+        <div class="images-container">
         <img class="itemImg" src="https://assets.myntassets.com/f_webp,w_163,c_limit,fl_progressive,dpr_2.0/assets/images/2026/OCTOBER/1/704e997f2b11491dac485abd14460d68.png"/>
         <img class="itemImg" src="https://assets.myntassets.com/f_webp,w_163,c_limit,fl_progressive,dpr_2.0/assets/images/2026/OCTOBER/3/c6e0982d5f0b49e9bb0facb69677ab58.png"/>
         <img class="itemImg" src="https://assets.myntassets.com/f_webp,w_163,c_limit,fl_progressive,dpr_2.0/assets/images/2026/OCTOBER/1/438e126236664f89b87c001ee2a74db2.png"/>
         <img class="itemImg" src="https://assets.myntassets.com/f_webp,w_163,c_limit,fl_progressive,dpr_2.0/assets/images/2026/OCTOBER/1/b8447e0e15fc4751841cb375db76c680.png"/>
         <img class="itemImg" src="https://assets.myntassets.com/f_webp,w_163,c_limit,fl_progressive,dpr_2.0/assets/images/2026/OCTOBER/3/b74fcdb2bcdd4297bec4df69c34f6cbe.png"/>
         <img class="itemImg" src="https://assets.myntassets.com/f_webp,w_163,c_limit,fl_progressive,dpr_2.0/assets/images/2026/SEPTEMBER/28/93847e3472ce4f2e9bc83d416952b37e.png"/>
+        </div>
     </section>
 
     <section class="container section1">
@@ -400,8 +830,10 @@
             </button>
         </div>      
     </section>
-
-    
+    <section class="container section1">
+        <img class="hImg" src="img5.png" />
+    </section>
+    <script src="script.js"></script>
     <footer>
         <div>
             <h4>ONLINE SHOPPING</h4>
